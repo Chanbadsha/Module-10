@@ -262,7 +262,7 @@ header {
   justify-content: center;
 }
 .experience_img{
-  width: 80%;
+  width: 90%;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
@@ -302,7 +302,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  right: 33%;
+  right: 38%;
   bottom: -1%;
   h4{
 
@@ -337,6 +337,6 @@ header {
 }
 .experience_btn{
   right: 33%;
-  top: 51%;
+  top: 48%;
 }
 }
