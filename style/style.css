@@ -6,8 +6,7 @@ html {
   font-optical-sizing: auto;
   font-style: normal;
   font-size: 10px;
-  height: 100vh;
-  width: 100vw;
+
 }
 * {
   box-sizing: border-box;
@@ -25,7 +24,7 @@ li {
   margin: 0 auto;
 }
 .hide {
-  display: none;
+  display: none !important;
 }
 
 /* Shared Css */
@@ -135,9 +134,8 @@ header {
   html {
     font-size: 5px;
   }
-  .display_flex {
-    flex-direction: column;
-  }
+  
+  
   .nav_menu,
   .nav_menu li a {
     flex-direction: row;
@@ -147,7 +145,7 @@ header {
     font-size: 2.5rem;
   }
   .default_description {
-    font-size: 3rem;
+    font-size: 2rem;
     line-height: 1.3;
   }
   .default_title {
@@ -157,6 +155,7 @@ header {
   .banner_contents,
   .banner_section {
     padding: 0rem;
+    flex-direction: column;
   }
   .banner_image {
     height: 40rem;
@@ -252,7 +251,7 @@ header {
 .experience_description {
   width: 80%;
   text-align: left;
-  font-size: 1.6rem;
+  font-size: 2rem;
   line-height: 1.2;
 }
 .experience_section_image {
@@ -321,17 +320,21 @@ header {
   }
   .experience_title {
     margin: auto;
+  
     /* padding-left: 20rem; */
   }
   .experience_description {
-    margin: auto;
+    margin: 3rem auto;
+  }
+  .card_title{
+    font-size: 3rem;
   }
   .card_description {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   .experience_btn {
     right: 25rem;
-    top: 112rem;
+    top: 147rem;
   }
 }
 
@@ -339,11 +342,12 @@ header {
 .fact_sections {
   padding: 10rem 0rem;
   flex-direction: column;
-  gap: 6rem;
+  gap: 3rem;
 }
 .fact_title {
   font-size: 4.5rem;
   font-weight: bold;
+  margin-bottom: 1.5rem;
 }
 
 .fact_sections_card {
@@ -384,4 +388,64 @@ header {
     width: 30rem;
     height: 30rem;
   }
+}
+
+/* Sponsor Section css */
+
+.sponsor_sections{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .default_title{
+    text-align: center;
+    font-weight: 500;
+  
+  }
+  .default_description{
+    width: 80%;
+    margin: 1rem auto;
+    text-align: center;
+  }
+}
+.sponsor_logo_sections{
+width: 100%;
+align-items: center;
+justify-content: space-between;
+margin-top: 2rem;
+}
+.sponsor_img{
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  
+}
+@media screen and (max-width:576px){
+.sponsor_sections{
+  margin-top: -10rem;
+  .default_description{
+    width: 100%;
+    font-size: 2rem;
+  }
+}
+  .sponsor_logo_sections{
+    gap: 2rem;
+  }
+  .sponsor_img{
+    width: 15%;
+  }
+}
+
+
+/* Footer section */
+footer{
+  background-color: #ddd;
+margin-top: 4rem !important;
+padding: 2rem;
+display: flex;
+justify-content: space-around;
+align-items: center;
+font-size: 1.5rem;
+color: #000;
+span{
+  font-weight: bold;
+}
 }
